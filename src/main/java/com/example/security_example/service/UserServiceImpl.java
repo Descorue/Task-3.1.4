@@ -67,7 +67,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Transactional
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         User user = findUserByUsername(s);
         if (user == null) {
